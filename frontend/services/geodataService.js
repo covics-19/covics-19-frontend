@@ -1,6 +1,6 @@
 app.factory('GeodataService', ['$http', '$q', function ($http, $q) {
 
-    const backendUrl = 'https://covics-backend.herokuapp.com';
+    const backendUrl = 'https://covics-19-api.herokuapp.com';
 
     let getCountryBorders = function (country) {
         return $http.get('data/world-geojson/countries/' + country + '.json').then(function (response) {
